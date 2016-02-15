@@ -1,0 +1,78 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	background-color: #fff;
+}
+h2 {
+	font-size: 4.8rem;
+}
+.line {
+	width: 27rem;
+	height: 2px;
+	background-color: #f4c60b;
+}
+article p {
+	font-size: 1.4rem;
+	margin: 2rem 0 2rem 0;
+}
+.portfolio-group {
+	border: 1px solid #f4c60b;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 7px;
+	margin: 4px;
+}
+.portfolio-group:hover {
+	background-color: #f4c60b;
+	color: #fff;
+	border-color: #000;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.portfolio-filter {
+	margin-bottom: 3rem;
+}
+.portfolio-container {
+	
+}
+img {
+	max-width: 100%;
+	display: inline-block;
+	white-space:nowrap;
+}
+/*----------------ISOTOPE------------------*/
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+ 
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}

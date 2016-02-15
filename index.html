@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Izotope</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,200' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+
+</head>
+<body>
+
+	<article>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2 class="text-uppercase"><strong>portfolio</strong></h2>
+					<div class="center-block line"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi omnis sapiente beatae,<br> cum repellendus voluptates perspiciatis reprehenderit, accusamus magnam vero eos architecto<br> porro ullam mollitia reiciendis deserunt officia quo cumque!</p>
+				</div>
+			</div><!--row-->
+		</div><!--container-->
+
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<div class="portfolio-filter">
+					    <a href="#" data-filter="*" class="text-uppercase portfolio-group current">all</a>
+					    <a href="#" data-filter=".nature" class="text-uppercase portfolio-group">nature</a>
+					    <a href="#" data-filter=".fashion" class="text-uppercase portfolio-group">fashion</a>
+						<a href="#" data-filter=".people" class="text-uppercase portfolio-group">people</a>
+						<a href="#" data-filter=".architecture" class="text-uppercase portfolio-group">architecture</a>
+					</div><!--portfolio-filter-->
+
+				
+
+					<div class="portfolio-container center-block">
+						<div class="people">
+							<img src="img/portfolio1.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+
+						<div class="architecture">
+							<img src="img/portfolio2.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+
+						<div class="nature">
+							<img src="img/portfolio3.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+
+						<div class="architecture people">
+							<img src="img/portfolio4.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+
+						<div class="fashion">
+							<img src="img/portfolio5.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+
+						<div class="people nature">
+							<img src="img/portfolio6.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+
+						<div class="fashion">
+							<img src="img/portfolio7.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+
+						<div class="nature">
+							<img src="img/portfolio8.png" alt="image" class="img-responsive" width="400" height="300" >
+						</div>
+					</div><!--portfolio-container-->
+					</div><!--col-md-12-->
+			</div><!--row-->
+		</div><!--container-->
+					
+				
+	</article>
+
+	<script>
+		$(window).load(function(){
+    	var $container = $('.portfolio-container');
+		    $container.isotope({
+		        filter: '*',
+		        animationOptions: {
+		            duration: 750,
+		            easing: 'linear',
+		            queue: false
+		        }
+		    });
+ 
+    	$('.portfolio-filter a').click(function(){
+        	$('.portfolio-filter .current').removeClass('current');
+        		$(this).addClass('current');
+ 
+        	var selector = $(this).attr('data-filter');
+        		$container.isotope({
+            		filter: selector,
+            		animationOptions: {
+                	duration: 750,
+                	easing: 'linear',
+                	queue: false
+            		}
+         		});
+        		return false;
+    		}); 
+		});
+
+	</script>
+	
+
+	
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
