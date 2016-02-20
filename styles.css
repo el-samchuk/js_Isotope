@@ -28,6 +28,7 @@ article p {
 	font-weight: bold;
 	padding: 7px;
 	margin: 4px;
+	height: 100%;
 }
 .portfolio-group:hover {
 	background-color: #f4c60b;
@@ -49,6 +50,10 @@ img {
 	max-width: 100%;
 	display: inline-block;
 	white-space:nowrap;
+}
+.no-gutter {
+	padding-right: 0;
+	padding-left: 0;
 }
 /*----------------ISOTOPE------------------*/
 .isotope-item {
